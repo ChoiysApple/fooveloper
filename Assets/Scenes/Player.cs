@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
     public float jump = 10f;
 
     private Rigidbody2D playerRigidbody;
+    private SpriteRenderer playerRenderer;
 
     Vector3 movement;
     bool isJumping = false;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour {
     // Use this for initialization
     void Start () {
         playerRigidbody = GetComponent<Rigidbody2D>();
+        playerRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 	
 	// Update is called once per frame
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour {
         if (Input.GetButtonDown("Jump"))
         {
             isJumping = true;
+            
         }
     }
 
@@ -39,10 +42,12 @@ public class Player : MonoBehaviour {
         if(Input.GetAxisRaw("Horizontal") < 0)
         {
             moveVelocity = Vector3.left;
+            playerRenderer.flipX = true;    // flip Left
         }
         else if(Input.GetAxisRaw("Horizontal") > 0)
         {
             moveVelocity = Vector3.right;
+            playerRenderer.flipX = false;   // flip Right
         }
 
         transform.position += moveVelocity * speed * Time.deltaTime;
@@ -64,5 +69,4 @@ public class Player : MonoBehaviour {
             isJumping = false;
         }
     }
-
 }
