@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour {
     public Image Onion_UI;
     public Sprite onion;
 
+    public Image Trophy_UI;
+    public Sprite trophy;
+
     // Use this for initialization
     void Start () {
 
@@ -20,15 +23,22 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       if(PlayerPrefs.GetInt("Wheat") == 1)
+
+        Debug.Log("W: "+ PlayerPrefs.GetInt("Wheat")+" O: "+ PlayerPrefs.GetInt("Onion")+ " T: "+ PlayerPrefs.GetInt("Trophy"));
+
+        if (PlayerPrefs.GetInt("Wheat") == 1)
         {
             Wheat_UI.sprite = wheat;
         }
-        else if(PlayerPrefs.GetInt("Onion") == 1)
+        if(PlayerPrefs.GetInt("Onion") == 1)
         {
             Onion_UI.sprite = onion;
         }
-	}
+        if (PlayerPrefs.GetInt("Trophy") == 1)
+        {
+            Trophy_UI.sprite = trophy;
+        }
+    }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Init()
@@ -36,6 +46,7 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("Wheat", 0);
         PlayerPrefs.SetInt("Onion", 0);
+        PlayerPrefs.SetInt("trophy", 0);
         PlayerPrefs.Save();
     }
 

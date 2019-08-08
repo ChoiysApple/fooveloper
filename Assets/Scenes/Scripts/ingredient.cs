@@ -7,7 +7,7 @@ public class ingredient : MonoBehaviour {
     //adjust this to change speed
     float speed = 5f;
     //adjust this to change how high it goes
-    float height = 0.2f;
+    float height = 0.02f;
 
     public string ingredientName = "";
     private bool check_player;
@@ -28,7 +28,7 @@ public class ingredient : MonoBehaviour {
         //calculate what the new Y position will be
         float newY = Mathf.Sin(Time.time * speed);
         //set the object's Y to the new calculated Y
-        transform.position = new Vector3(pos.x, newY * height, pos.z);
+        transform.position = new Vector3(pos.x, pos.y + newY * height, pos.z);
 
         // when collision happens
         if (check_player)

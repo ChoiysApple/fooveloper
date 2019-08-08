@@ -64,7 +64,6 @@
     <Compile Include="Assets\JumpBox.cs" />
     <Compile Include="Assets\Scenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scenes\Scripts\DeathZone.cs" />
-    <Compile Include="Assets\Scenes\Scripts\GameData.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scenes\Scripts\ingredient.cs" />
     <Compile Include="Assets\Scenes\Scripts\LastScene.cs" />
