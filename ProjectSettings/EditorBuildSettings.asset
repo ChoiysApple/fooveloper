@@ -32,4 +32,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LabScene/OnionOnly.unity
     guid: 24135ae068568d446a01268cf16fac6a
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro1.unity
+    guid: 3dbdd38d448cd4c4fb99cc87ac15c076
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro2.unity
+    guid: e32ed967b9b9d0c42876ecdc0c6c6d93
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro3.unity
+    guid: e4cc4e20f20841949968066a9c2ad92e
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro4.unity
+    guid: feae1e6a5b0220d47b5cc7f2872c7946
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro5.unity
+    guid: dc2b1787d4aa6dc408490c1eaa980ea1
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro6.unity
+    guid: 2f1c302fa79f81b4fa82b8f0039111c2
+  - enabled: 1
+    path: Assets/Scenes/IntroScene/Intro7.unity
+    guid: c10cdd5eea586de489658c529080747b
   m_configObjects: {}

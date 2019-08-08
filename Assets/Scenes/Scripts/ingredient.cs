@@ -16,7 +16,7 @@ public class ingredient : MonoBehaviour {
 
     void Start () {
         check_player = false;
-        if(PlayerPrefs.GetInt("Wheat") == 1)
+        if(PlayerPrefs.GetInt(ingredientName) == 1)
         {
             Destroy(ingredients);
         }
