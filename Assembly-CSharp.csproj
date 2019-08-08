@@ -61,7 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\JumpBox.cs" />
     <Compile Include="Assets\Scenes\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scenes\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scenes\Scripts\Player.cs" />
     <Compile Include="Assets\Universal Pixel Hero (Warrior)\Scripts\Controller.cs" />
     <Reference Include="UnityEditor.StandardEvents">
