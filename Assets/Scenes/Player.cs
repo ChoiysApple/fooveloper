@@ -12,25 +12,30 @@ public class Player : MonoBehaviour {
     private SpriteRenderer playerRenderer;
 
     Vector3 movement;
-    bool isJumping = false;
+    int jumpCount = 1;
+    bool isGround = true;
 
     // Use this for initialization
     void Start () {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        jumpCount = 1;
+
+        isGround = true;
     }
 	
-	// Update is called once per frame
+
 	void Update () {
         if (Input.GetButtonDown("Jump"))
         {
-            isJumping = true;
-            
+            //isJumping = true;
         }
     }
 
     private void FixedUpdate()
-    {
+    { 
+
         Move();
         Jump();
     }
@@ -55,18 +60,29 @@ public class Player : MonoBehaviour {
 
     private void Jump()
     {
-        if (!isJumping)
+        if (isGround)
         {
-            return;
+            jumpCount = 1;
+            if (Input.GetKeyDown("space")) 
+            {
+                if (jumpCount == 1)
+                {
+                    Vector2 jumpVelociy = new Vector2(0, jump);
+                    playerRigidbody.AddForce(jumpVelociy, ForceMode2D.Impulse);
+                    isGround = false;
+                    jumpCount = 0;
+                }
+            }
         }
-        else
-        {
-            playerRigidbody.velocity = Vector2.zero;
 
-            Vector2 jumpVelociy = new Vector2(0, jump);
-            playerRigidbody.AddForce(jumpVelociy, ForceMode2D.Impulse);
+    }
 
-            isJumping = false;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {          
+            isGround = true;
+            jumpCount = 1; 
         }
     }
 }

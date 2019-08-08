@@ -155,7 +155,12 @@ Prefab:
     - target: {fileID: 114925620756832026, guid: 7fe9040bf0ba25b43a4b861b4fe33f5b,
         type: 2}
       propertyPath: jump
-      value: 8
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114925620756832026, guid: 7fe9040bf0ba25b43a4b861b4fe33f5b,
+        type: 2}
+      propertyPath: speed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe9040bf0ba25b43a4b861b4fe33f5b, type: 2}
@@ -291,7 +296,7 @@ GameObject:
   - component: {fileID: 1729972555}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
