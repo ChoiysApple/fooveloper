@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
             playerRenderer.flipX = false;    // flip Left
 
             anim.SetTrigger("Run");
-            Debug.Log("Trigger Run");
+            //Debug.Log("Trigger Run");
         }
         else if(Input.GetAxisRaw("Horizontal") > 0)
         {
@@ -57,12 +57,12 @@ public class Player : MonoBehaviour {
             playerRenderer.flipX = true;   // flip Right
 
             anim.SetTrigger("Run");
-            Debug.Log("Trigger Run");
+            //Debug.Log("Trigger Run");
         }
         else
         {
             anim.SetTrigger("Idle");
-            Debug.Log("Trigger Idle");
+            //Debug.Log("Trigger Idle");
         }
 
 

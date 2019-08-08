@@ -6,9 +6,6 @@ using UnityEngine.SceneManagement;
 public class Portal : MonoBehaviour
 {
 
-    //컴포넌트
-    private SpriteRenderer sprite_render;
-
     //원하는 씬
     public string SceneName = "";
 

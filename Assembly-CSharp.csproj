@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scenes\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scenes\Scripts\LastScene.cs" />
+    <Compile Include="Assets\Scenes\Scripts\MachinePortal.cs" />
     <Compile Include="Assets\Scenes\Scripts\Player.cs" />
     <Compile Include="Assets\Scenes\Scripts\Portal.cs" />
     <Compile Include="Assets\Scenes\Scripts\PressAnyKey.cs" />

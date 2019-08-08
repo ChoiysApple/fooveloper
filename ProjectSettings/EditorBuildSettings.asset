@@ -20,4 +20,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScreen.unity
     guid: d7c5846d8c421dc4c8601da4ed0b258e
+  - enabled: 1
+    path: Assets/Scenes/LabScene/Clear.unity
+    guid: f0ba1ef3c68a90c449f0effde4c47558
+  - enabled: 1
+    path: Assets/Scenes/LabScene/nothing.unity
+    guid: f7c383fb0337b3448afef402933c1d5c
+  - enabled: 1
+    path: Assets/Scenes/LabScene/WheatOnly.unity
+    guid: f4aed7e3d533f3f4ea63bc6d9f5e93e1
+  - enabled: 1
+    path: Assets/Scenes/LabScene/OnionOnly.unity
+    guid: 24135ae068568d446a01268cf16fac6a
   m_configObjects: {}
