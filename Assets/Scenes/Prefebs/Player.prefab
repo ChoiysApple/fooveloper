@@ -23,10 +23,10 @@ GameObject:
   - component: {fileID: 114925620756832026}
   - component: {fileID: 61815714725618382}
   - component: {fileID: 50096096055230610}
-  - component: {fileID: 95745215794174532}
+  - component: {fileID: 95270412824449464}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1290723632448162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.72, y: -0.88, z: 0}
+  m_LocalPosition: {x: -3, y: -0.97, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.14, y: 0.16}
+    oldSize: {x: 0.21875, y: 0.25}
     newSize: {x: 0.14, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -89,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10623247, y: 0.14571378}
   m_EdgeRadius: 0
---- !u!95 &95745215794174532
+--- !u!95 &95270412824449464
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jump: 35
+  jump: 30
 --- !u!212 &212136295144198788
 SpriteRenderer:
   m_ObjectHideFlags: 1
