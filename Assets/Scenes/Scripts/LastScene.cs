@@ -9,13 +9,11 @@ public class LastScene : MonoBehaviour {
 
     private float timer;
     public float waitingTime;
-    bool inside;
 
 	// Use this for initialization
 	void Start () {
         timer = 0f;
         waitingTime = 2f;
-        inside = false;
     }
 	
 	// Update is called once per frame
