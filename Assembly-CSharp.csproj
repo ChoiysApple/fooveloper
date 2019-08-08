@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scenes\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scenes\Scripts\Player.cs" />
     <Compile Include="Assets\Scenes\Scripts\Portal.cs" />
-    <Compile Include="Assets\Universal Pixel Hero (Warrior)\Scripts\Controller.cs" />
+    <Compile Include="Assets\Scenes\Scripts\PressAnyKey.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/ChoiysApple/Documents/GitHub/Melon Chicken/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

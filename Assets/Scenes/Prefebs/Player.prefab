@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114925620756832026}
   - component: {fileID: 61815714725618382}
   - component: {fileID: 50096096055230610}
-  - component: {fileID: 95270412824449464}
+  - component: {fileID: 95071950030927974}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1290723632448162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -0.97, z: 0}
+  m_LocalPosition: {x: -4.35, y: -0.06, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,20 +76,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000000037252903, y: 0.07285689}
+  m_Offset: {x: -0.0000000037252903, y: -0.017025836}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.21875, y: 0.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.35555556, y: 0.35555556}
     newSize: {x: 0.14, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10623247, y: 0.14571378}
+  m_Size: {x: 0.10623247, y: 0.3254792}
   m_EdgeRadius: 0
---- !u!95 &95270412824449464
+--- !u!95 &95071950030927974
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1290723632448162}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3f00489c2090622478b74d6328d2eec8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 48a2bbbc6aa99764ea5d96f1ad8cacf4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,9 +155,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ecf759a67aa784081a1bc0f71a11843e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8117f75fa28686a4bad5f782257eb354, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.14, y: 0.16}

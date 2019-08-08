@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 
     private Rigidbody2D playerRigidbody;
     private SpriteRenderer playerRenderer;
+    private Animator anim;
 
     Vector3 movement;
     int jumpCount = 1;
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour {
     void Start () {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponentInChildren<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
         jumpCount = 1;
 
@@ -26,16 +28,13 @@ public class Player : MonoBehaviour {
     }
 	
 
-	void Update () {
-        if (Input.GetButtonDown("Jump"))
-        {
-            //isJumping = true;
-        }
+	void Update ()
+    {
+ 
     }
 
     private void FixedUpdate()
-    { 
-
+    {
         Move();
         Jump();
     }
@@ -47,13 +46,25 @@ public class Player : MonoBehaviour {
         if(Input.GetAxisRaw("Horizontal") < 0)
         {
             moveVelocity = Vector3.left;
-            playerRenderer.flipX = true;    // flip Left
+            playerRenderer.flipX = false;    // flip Left
+
+            anim.SetTrigger("Run");
+            Debug.Log("Trigger Run");
         }
         else if(Input.GetAxisRaw("Horizontal") > 0)
         {
             moveVelocity = Vector3.right;
-            playerRenderer.flipX = false;   // flip Right
+            playerRenderer.flipX = true;   // flip Right
+
+            anim.SetTrigger("Run");
+            Debug.Log("Trigger Run");
         }
+        else
+        {
+            anim.SetTrigger("Idle");
+            Debug.Log("Trigger Idle");
+        }
+
 
         transform.position += moveVelocity * speed * Time.deltaTime;
     }
@@ -85,4 +96,5 @@ public class Player : MonoBehaviour {
             jumpCount = 1; 
         }
     }
+
 }

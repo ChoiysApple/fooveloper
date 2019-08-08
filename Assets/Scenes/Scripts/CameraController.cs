@@ -22,3 +22,39 @@ public class CameraController : MonoBehaviour
         transform.position = player.transform.position + offset;
     }
 }
+/*
+public class cameraController : MonoBehaviour
+{
+
+    public Transform target;
+
+    playerScript playerController;
+
+    float xOffset;
+    // Use this for initialization
+    void Start()
+    {
+        xOffset = transform.position.x - target.position.x;
+        playerController = target.GetComponent<playerScript>();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 newPosition = transform.position;
+        if (playerController.isFacingRight)
+        {
+            newPosition.x = target.position.x + xOffset;
+        }
+        else
+        {
+            newPosition.x = target.position.x - xOffset;
+        }
+
+        transform.position = Vector3.Lerp(transform.position, newPosition, 0.07f);
+
+
+    }
+}*/
+
