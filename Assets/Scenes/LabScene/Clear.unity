@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137c0477446b7494b94a4f0347f621c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: MainMenu
+  SceneName: MainScreen
   waitingTime: 0
 --- !u!64 &341095459
 MeshCollider:

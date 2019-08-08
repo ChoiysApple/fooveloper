@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class MachinePortal : MonoBehaviour
 {
     public GameManager manager;
-    public string[] scenes = new string[4] { "Clear", "OnionOnly", "WheatOnly", "nothing" };
 
     //플레이어 닿았나 체크
     private bool check_player = false;
+    private string scene = "";
+    private int status;
 
     //초기화
     private void Start()
@@ -20,9 +21,25 @@ public class MachinePortal : MonoBehaviour
     //업데이트
     private void Update()
     {
+        status = checkStatus();
         if (check_player)
         {
-            SceneManager.LoadScene(scenes[manager.status]);
+            switch (status) {
+                case 0:
+                    scene = "nothing";
+                    break;
+                case 1:
+                    scene = "OnionOnly";
+                    break;
+                case 2:
+                    scene = "WheatOnly";
+                    break;
+                case 3:
+                    scene = "Clear";
+                    break;
+            }
+
+            SceneManager.LoadScene(scene);
         }
     }
 
@@ -53,6 +70,34 @@ public class MachinePortal : MonoBehaviour
     public bool GetCheckPlayer()
     {
         return check_player;
+    }
+
+    private int checkStatus()
+    {
+        int[] isGet = new int[2];
+        isGet[0] = PlayerPrefs.GetInt("Wheat");
+        isGet[1] = PlayerPrefs.GetInt("Onion");
+
+        // nothing
+        if (isGet[0] != 1 && isGet[1] != 1)
+        {
+            return 0;
+        }
+        // onion only
+        else if (isGet[0] != 1 && isGet[1] == 1)
+        {
+            return 1;
+        }
+        // wheat only
+        else if (isGet[0] == 1 && isGet[1] != 1)
+        {
+            return 2;
+        }
+        //clear
+        else
+        {
+            return 3;
+        }
     }
 
 }
