@@ -16,8 +16,16 @@ public class Player : MonoBehaviour {
     int jumpCount = 1;
     bool isGround = true;
 
+    private AudioSource audio;
+    public AudioClip jumpSound;
+
+
     // Use this for initialization
     void Start () {
+        audio = gameObject.AddComponent<AudioSource>();
+        audio.clip = jumpSound;
+        audio.loop = false;
+
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerRenderer = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -82,6 +90,7 @@ public class Player : MonoBehaviour {
                     playerRigidbody.AddForce(jumpVelociy, ForceMode2D.Impulse);
                     isGround = false;
                     jumpCount = 0;
+                    audio.Play();
                 }
             }
         }
@@ -95,6 +104,10 @@ public class Player : MonoBehaviour {
             isGround = true;
             jumpCount = 1; 
         }
+
+
     }
+
+
 
 }

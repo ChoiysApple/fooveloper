@@ -14,7 +14,15 @@ public class ingredient : MonoBehaviour {
 
     public GameObject ingredients;
 
+    private AudioSource audio;
+    public AudioClip collectSound;
+
     void Start () {
+
+        audio = gameObject.AddComponent<AudioSource>();
+        audio.clip = collectSound;
+        audio.loop = false;
+
         check_player = false;
         if(PlayerPrefs.GetInt(ingredientName) == 1)
         {
@@ -33,6 +41,7 @@ public class ingredient : MonoBehaviour {
         // when collision happens
         if (check_player)
         {
+            audio.Play();
             convertManager();
             Destroy(ingredients);
         }

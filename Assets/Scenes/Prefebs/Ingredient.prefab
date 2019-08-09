@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Wheat
   ingredients: {fileID: 1342006484039558}
+  collectSound: {fileID: 0}
 --- !u!212 &212509309485372790
 SpriteRenderer:
   m_ObjectHideFlags: 1

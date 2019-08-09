@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7.5
   jump: 35
+  jumpSound: {fileID: 8300000, guid: b9b55089e291d964d8c47de8907bfbed, type: 3}
 --- !u!212 &212136295144198788
 SpriteRenderer:
   m_ObjectHideFlags: 1
