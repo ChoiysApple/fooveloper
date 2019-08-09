@@ -2,11 +2,11 @@ WindowsStandalone
 PlayerPath?
 C:/Users/ChoiysApple/Desktop/fooveloper/Melon Chicken.exe
 SceneListBegin?
+Assets/Scenes/MainScreen.unity
 Assets/Scenes/Main.unity
 Assets/Scenes/Main 1.unity
 Assets/Scenes/Main 2.unity
 Assets/Scenes/Lab.unity
-Assets/Scenes/MainScreen.unity
 Assets/Scenes/LabScene/Clear.unity
 Assets/Scenes/LabScene/nothing.unity
 Assets/Scenes/LabScene/Ending.unity
@@ -70,8 +70,6 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 2d58ca16854b99daea8c45e9c0f367b7 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 50b0b141074b216c8b53b1bd467f73c9 Unity.TextMeshPro.dll:TMPro.TMP_InputField
-486cd95c82d8305219c352c06b776e1f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-486cd95c82d8305219c352c06b776e1f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 486cd95c82d8305219c352c06b776e1f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 da2091a04d360891450faf16cdf621f1 UnityEngine.UI.dll:UnityEngine.UI.Button
