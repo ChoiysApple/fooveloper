@@ -1,6 +1,9 @@
 # fooveloper
  2D platformer for Global Applied Game Jam 2019
  
+ https://img.itch.zone/aW1nLzIzNzcwMzIucG5n/original/FpIDlS.png
+ 
+ 
  ### Team MelonChicken
 * [@ChoiysApple](github.com/ChoiysApple) - Game Design(Level Design), Development
 * 000 - Storytelling, Art 
