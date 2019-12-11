@@ -9,11 +9,9 @@
  </br>
  
  ### Tech Stack
- ---
- * Unity (v2018.3)
+ Unity (v2018.3)
 
  </br>
  
  ### Download
- ---
  Avaliable on [itch.io](https://choiysapple.itch.io/fooveloper)
